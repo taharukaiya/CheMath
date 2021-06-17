@@ -1,0 +1,20 @@
+{
+  "name": "navbar-circle-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss style/main.css -w",
+    "build:css": "tailwindcss build src/tailwind.css -o public/style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2"
+  }
+}

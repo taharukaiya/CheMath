@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="min-h-screen">
+
+        <nav id="navbar" class="bg-green-50 shadow-sm">
+            <div class="max-w-5xl mx-auto">
+
+                <div class="flex justify-between">
+                    <div class="flex space-x-4">
+                        <!-- logo -->
+                        <div>
+                            <a href="#" class="flex items-center py-5 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
+                                </svg>
+                                <span class="font-bold">CheMathO</span>
+                            </a>
+                        </div>
+                        <!-- primary nav -->
+                        <div class="hidden md:flex space-x-3 items-center">
+                            <a href="#" class="flex py-5 px-3 text-gray-700 hover:bg-green-300 hover:text-black"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                </svg>Home</a>
+                            <a href="#" class="flex py-5 px-3 text-gray-700 hover:bg-green-300 hover:text-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                </svg>
+                                Courses</a>
+                        </div>
+
+                    </div>
+                    <!-- secondary nav -->
+                    <div class="hidden md:flex space-x-1 items-center mr-2">
+                        <a href="#" class=" py-2 px-3 bg-gray-300 rounded">Login</a>
+                        <a href="#" class=" py-2 px-3 bg-green-400 rounded">Signup</a>
+                    </div>
+
+                    <!-- mobile button -->
+                    <div class="md:hidden flex items-center mr-2 mobile-menu-button">
+                        <button class="bg-green-500 p-1 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Mobile menu -->
+            <div class="pb-4 hidden md:hidden mobile-menu transition  duration-100">
+                <div class="mb-2">
+                    <a href="#home" class="py-2 px-4 flex items-center hover:bg-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        Home</a>
+                    <a href="#" class="py-2 px-4 flex items-center hover:bg-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                        Courses</a></div>
+                <div class="flex space-x-1 items-center justify-center">
+                    <a href="#" class="py-2 px-3 bg-gray-300 rounded">Login</a>
+                    <a href="#" class="py-2 px-3 bg-green-400 rounded">Signup</a>
+                </div>
+            </div>
+        </nav>
+        <div class="h-44 grid place-items-center bg-green-500 ">
+            <h1 class="font-extrabold text-white text-5xl">FAQ</h1>
+        </div>
+        <div class="max-w-md  mx-auto px-3 flex-row mt-5 faqcontainer">
+            <div class="p-3 border-2 border-green-300">
+                <h2 class="pb-2 border-b border-green-400 text-xl font-semibold">1. What is ......?</h2>
+                <ul class="pt-3 space-y-3">
+                    <li>This is .......</li>
+                    <li>This do that...... </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <footer class=" bg-gradient-to-br from-green-500 to-green-300 shadow-md px-10 md:px-44 py-6 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div>
+                <a href="#" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white " fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
+                    </svg>
+                    <span class="font-bold text-xl">CheMathO</span>
+                </a>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eum?
+                </p>
+            </div>
+            <div class="space-y-3 flex flex-col text-gray-700">
+                <h3 class="font-bold text-xl md:mb-3 ">Important Links</h3>
+                <a href="#" class="hover:text-white hover:font-bold transition duration-500 ease-in-out">Terms &
+                    Conditions</a>
+                <a href="#" class="hover:text-white hover:font-bold transition duration-500 ease-in-out">Privacy
+                    Policy</a>
+            </div>
+            <div class="space-y-3 flex flex-col text-gray-700">
+                <h3 class="font-bold text-xl mb-3">Important Links</h3>
+                <a href="#" class="hover:text-white hover:font-bold transition duration-500 ease-in-out">Terms &
+                    Conditions</a>
+                <a href="#" class="hover:text-white hover:font-bold transition duration-500 ease-in-out">Privacy
+                    Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/ui.js"></script>
+    <script>
+        gsap.fromTo('.faqcontainer', {
+            x: 0,
+            y: 500,
+            scale: 0.2
+        }, {
+            x: 0,
+            y: 0,
+            duration: 2,
+            scale: 1
+        })
+    </script>
+</body>
+
+</html>

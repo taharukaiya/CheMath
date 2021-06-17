@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Login</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <nav id="navbar" class="bg-green-50 shadow-sm">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
+                            </svg>
+                            <span class="font-bold">CheMathO</span>
+                        </a>
+                    </div>
+                    <!-- primary nav -->
+                    <div class="hidden md:flex space-x-3 items-center">
+                        <a href="#" class="flex py-5 px-3 text-gray-700 hover:bg-green-300 hover:text-black"> <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>Home</a>
+                        <a href="#" class="flex py-5 px-3 text-gray-700 hover:bg-green-300 hover:text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                            Courses</a>
+                    </div>
+
+                </div>
+                <!-- secondary nav -->
+                <div class="hidden md:flex space-x-1 items-center mr-2">
+                    <a href="#" class=" py-2 px-3 bg-gray-300 rounded">Login</a>
+                    <a href="#" class=" py-2 px-3 bg-green-400 rounded">Signup</a>
+                </div>
+
+                <!-- mobile button -->
+                <div class="md:hidden flex items-center mr-2 mobile-menu-button">
+                    <button class="bg-green-500 p-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Mobile menu -->
+        <div class="pb-4 hidden md:hidden mobile-menu transition  duration-100">
+            <div class="mb-2">
+                <a href="#home" class="py-2 px-4 flex items-center hover:bg-green-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Home</a>
+                <a href="#" class="py-2 px-4 flex items-center hover:bg-green-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    Courses</a></div>
+            <div class="flex space-x-1 items-center justify-center">
+                <a href="#" class="py-2 px-3 bg-gray-300 rounded">Login</a>
+                <a href="#" class="py-2 px-3 bg-green-400 rounded">Signup</a>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen py-5 px-3 md:px-15 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="grid grid-cols-1 md:grid-cols-2 max-w-7xl">
+            <div class="grid place-items-center">
+
+                <div class="hidden md:block intro_image">
+                    <img src="./src/img/chemistry.svg" alt="" class="mt-10" width="300px">
+                </div>
+            </div>
+            <div>
+                <div class="form_container bg-white p-8 rounded shadow-2xl">
+                    <h2 class="text-4xl font-bold mb-4 text-center">Signup</h2>
+                    <form action="#" class="space-y-5">
+                        <div>
+                            <label class="label-style">Name</label>
+                            <input type="text" class="input-block" name="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <label class="label-style">E-mail</label>
+                            <input type="email" class="input-block" name="email" placeholder="eg. example@example.com">
+                        </div>
+                        <div>
+                            <label class="label-style">Phone</label>
+                            <input type="tel" class="input-block" name="phone" placeholder="eg. 01XXXXXXXXX">
+                        </div>
+                        <div>
+                            <label class="label-style">Password</label>
+                            <input type="password" class="input-block" name="password" placeholder="*****">
+                        </div>
+                        <div class="flex align-items-center ">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 rounded text-green-600 outline-none"
+                                id="agree">
+                            <label for="agree" class="ml-2 text-sm">Are you agree with our terms and conditions?</label>
+
+                        </div>
+                        <button type="submit" class="primary_btn btn_center-block">Create
+                            An Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./src/ui.js"></script>
+</body>
+
+</html>
